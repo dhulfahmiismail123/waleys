@@ -1,0 +1,21 @@
+{
+  "name": "waleys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhulfahmiismail123/waleys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dhulfahmiismail123/waleys/issues"
+  },
+  "homepage": "https://github.com/dhulfahmiismail123/waleys#readme"
+}
