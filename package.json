@@ -20,6 +20,9 @@
   "homepage": "https://github.com/dhulfahmiismail123/waleys#readme",
   "dependencies": {
     "baileys": "^6.7.19",
-    "dotenv": "^17.2.1"
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^17.2.1",
+    "impit": "^0.5.4",
+    "libphonenumber-js": "^1.12.15"
   }
 }

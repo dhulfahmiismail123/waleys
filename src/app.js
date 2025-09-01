@@ -1,15 +1,20 @@
+// src/app.js
 import { makeWASocket } from 'baileys';
-import { credsStore } from './database.js';
-import allEventHandlers from './eventHandlers.js';
+import store from './database.js';
+import allEventHandlers from './handlers/events/index.js';
 
 const initializeWhatsapp = async () => {
-    const { state, saveCreds } = credsStore();
-    const socket = await ({
-        auth: state
+    const { auth, getMessage, saveCreds } = await store();
+    const socket = await makeWASocket({
+        auth,
+        getMessage
     });
     // load all events
     await allEventHandlers({
         socket,
+        initializeWhatsapp,
         saveCreds
     });
 }
+
+initializeWhatsapp();
