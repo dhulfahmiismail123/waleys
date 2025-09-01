@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/dhulfahmiismail123/waleys/issues"
   },
-  "homepage": "https://github.com/dhulfahmiismail123/waleys#readme"
+  "homepage": "https://github.com/dhulfahmiismail123/waleys#readme",
+  "dependencies": {
+    "baileys": "^6.7.19",
+    "dotenv": "^17.2.1"
+  }
 }
