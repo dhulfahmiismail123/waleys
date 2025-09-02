@@ -22,6 +22,10 @@ export const isBroadcast = (messages) => {
     return messages?.key?.remoteJid?.endsWith('@broadcast')
 }
 
+export const isCommand = (messages) => {
+    const text = messages?.message?.conversation || messages?.message?.extendedTextMessage?.text;
+    return typeof text === 'string' && /^\/[a-zA-Z0-9_-]+$/.test(text);
+}
 
 // Connection
 export const isReconnect = (data) => {

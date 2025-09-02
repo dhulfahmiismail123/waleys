@@ -8,7 +8,10 @@ export default ({ socket }) => {
         await saveMessage(messages);
         if (isChat(messages)) {
             console.log("Chat Message:", JSON.stringify(messages, null, 2));
-        } else if (isGroup(messages)) {
+            if (isCommand(messages)) {
+                
+            }
+        }if (isGroup(messages)) {
             console.log("Group Message:", JSON.stringify(messages, null, 2));
         } else if (isBroadcast(messages)) {
             console.log("Broadcast Message:", JSON.stringify(messages, null, 2));
